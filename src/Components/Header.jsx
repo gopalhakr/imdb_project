@@ -3,6 +3,7 @@ import Menuitem from './Menuitem'
 import {AiFillHome} from 'react-icons/ai'
 import {BsFillInfoCircleFill} from 'react-icons/bs'
 import Link from 'next/link'
+import Darkmode from './Darkmode'
 
 
 export default function Header() {
@@ -12,11 +13,13 @@ export default function Header() {
             <Menuitem title='Home' address ='/' Icon ={AiFillHome}/>
             <Menuitem title='About' address ='/about' Icon ={BsFillInfoCircleFill}/>
         </div>
-
+        <div className='flex items-center gap-5'>
+            <Darkmode/>
         <Link href={'/'} className='flex gap-2 item-center'>
             <span className='bold bg-yellow-400 rounded-lg px-2'>IMDB</span>
             <span className='text-xl hidden sm:inline'>Clone</span>
         </Link>
+        </div>
     </div>
   )
 }
