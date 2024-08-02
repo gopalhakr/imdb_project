@@ -24,11 +24,11 @@ export default async function moviepage({ params }) {
 
                     <p className='mb-3'>
 
-                    <span className='font-semibold mr-1'>Date Released</span>
+                    <span className='font-semibold mr-1'>Date Released : </span>
                     {movie.release_date || movie.first_air_date}</p>
                     
                     <p className='mb-3'>
-                    <span className='font-semibold mr-1'>Rating</span>
+                    <span className='font-semibold mr-1'>Rating : </span>
                     {movie.vote_count}</p>
                 </div>
             </div>
