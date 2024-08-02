@@ -17,7 +17,7 @@ export default function Darkmode() {
       {currentTheme === 'dark' ? (
         <MdLightMode 
           onClick={() => setTheme('light')} 
-          className='text-xl cursor-pointer hover:text-teal-950'
+          className='text-xl cursor-pointer hover:text-slate-300'
         />
       ) : (
         <MdDarkMode 
