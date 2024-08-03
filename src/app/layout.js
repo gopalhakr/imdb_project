@@ -29,14 +29,13 @@
 //     </html>
 //   );
 // }
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import Providers from "./Providers";
 import Navbar from "@/Components/Navbar";
 import SearchBox from "@/Components/SearchBox";
-import SuspenseWrapper from '@/Components/SuspenseWrapper'; 
+import SuspenseWrapper from '@/Components/SuspenseWrapper'; // Correct case
 
 const inter = Inter({ subsets: ["latin"] });
 
