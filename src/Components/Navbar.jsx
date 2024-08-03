@@ -1,6 +1,6 @@
 import React from 'react'
 import NavbarItem from './NavbarItem'
-import SuspenseWrapper from './SuspenseWrapper';
+import SuspenseWrapper from '@/components/SuspenseWrapper';
 
 export default function Navbar() {
   return (
