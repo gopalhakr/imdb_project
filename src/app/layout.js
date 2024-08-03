@@ -4,6 +4,7 @@ import Header from "@/Components/Header"
 import Providers from "./Providers";
 import Navbar from "@/Components/Navbar";
 import SearchBox from "@/Components/SearchBox";
+import SuspenseWrapper from '@/components/SuspenseWrapper';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
         <Header/>
+        <SuspenseWrapper>
         <Navbar/>
+        </SuspenseWrapper>
         <SearchBox/>
         {children}
         </Providers>
