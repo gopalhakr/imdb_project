@@ -1,6 +1,6 @@
 
 import Results from '@/Components/Results';
-import React from 'react';
+
 
 export default async function SearchPage({ params }) {
   const searchTerm = params.searchTerm;
@@ -18,11 +18,11 @@ export default async function SearchPage({ params }) {
 
   return (
     <div>
-      {results && results.length === 0 ? (
-        <h1 className='text-center pt-6'>No results found</h1>
-      ) : (
-        <Results results={results} />
-      )}
+      {results && results.length ===  (
+        <h1 className='text-center pt-6'>No results found</h1>)}
+      
+        {results && <Results results={results} />
+      }
     </div>
   );
 }
