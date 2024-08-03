@@ -1,6 +1,4 @@
 
-
-
 import Results from '@/Components/Results';
 import React from 'react';
 
